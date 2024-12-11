@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: ajvieiraa-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ajvieiraa/ajvieiraa-config-server.git
+          #username: username
+          #password: password
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
